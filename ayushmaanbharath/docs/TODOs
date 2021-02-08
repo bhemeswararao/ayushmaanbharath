@@ -1,0 +1,28 @@
+1) need to provid method to get patient claims based on patient address
+   To use in table of  patietn.html 
+2) In add claim page , what if claimId is repeated ? Is it (claimid) should be unique ?
+
+
+3) Is it not good to move "ClaimCreated" event from app.js to corresponding html page i.e central.html 
+
+4) clear the claim data ofter new claim creation 
+
+5) bala: we are not able to see very details abt errr in error callback . 
+scenario we tested is 'providing not existing approved caleimid' for approveClaim()
+
+Error while approving a claim details at 
+https://ropsten.etherscan.io/tx/0x118ca5f8bd026f584d12e560829d473acf4a97c962c433b7cd81e6321e5f5e32
+but it has excuted  success calback instead of error
+
+
+"Error: gas required exceeds allowance or always failing transaction at chrome-"
+
+6) refresh the grid after patient claim status changes - this won't require because network will takes time to approve the claim.
+
+7) clear claim form after claim creation 
+
+8) web3 js send multiple api calls at time.
+
+9) On central page on clicking claim id details need to show - done
+
+------10) if max claim ammount exceeds addclaim should not allow. but, currently its allowing.
